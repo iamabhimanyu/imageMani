@@ -26,15 +26,15 @@ float (optional): The float style to be applied to the image (e.g., left, right)
 
 -----------Examples------------
 1. Resize image to width=300 and height=200:
-    GET /manipulate?url=https://example.com/image.jpg&width=300&height=200
+    GET /manipulate?url=https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&width=300&height=200
 2. Crop image to width=500 and height=500:
-    GET /manipulate?url=https://example.com/image.jpg&width=500&height=500&crop=true
+    GET /manipulate?url=https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&width=500&height=500&crop=true
 3. Apply black and white filter to the image:
-    GET /manipulate?url=https://example.com/image.jpg&bw=true
+    GET /manipulate?url=https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&bw=true
 4. Convert image format to PNG:
-    GET /manipulate?url=https://example.com/image.jpg&format=png
+    GET /manipulate?url=https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&format=png
 5. Float the image to the left:
-    GET /manipulate?url=https://example.com/image.jpg&float=left
+    GET /manipulate?url=https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&float=left
 
 ------Additional Information-----  
 It is important to thoroughly test the codebase to ensure proper image manipulation and handling of different scenarios. Consider the following cases:
