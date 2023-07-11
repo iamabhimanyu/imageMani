@@ -20,7 +20,20 @@ app.get('/manipulate', async (req, res) => {
     let image = sharp(imageBuffer);
 
     if (width || height) {
-      image = image.resize(Number(width), Number(height), { fit: crop ? sharp.fit.cover : sharp.fit.inside });
+      const resizeOptions = { fit: crop ? sharp.fit.cover : sharp.fit.inside };
+  
+      if (width && !height) {
+        resizeOptions.width = Number(width);
+        resizeOptions.height = null;
+      } else if (height && !width) {
+        resizeOptions.width = null;
+        resizeOptions.height = Number(height);
+      } else {
+        resizeOptions.width = Number(width);
+        resizeOptions.height = Number(height);
+      }
+
+      image.resize(resizeOptions);
     }
 
     if (bw === 'true') {
